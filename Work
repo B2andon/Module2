@@ -1,0 +1,21 @@
+###############################
+#   Brandon's R Studio Work   #
+###############################
+
+#### Dataset we are working with
+
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+     // imported into r studio
+
+#### Code we are working with
+
+myMean <- function(assignment2) { return(sum(assignment)/length(someData)) }
+     // this code did not function, as we were missing a proper object to link our sum and length to. 
+     // the values 'assignment' and 'someData' do not work in this situation and have and will continue to come back with errors. 
+
+
+#### My Corrected code
+
+myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2))}
+     // this code works flawlessly and does not return any errors when using the function "myMean(assignment2)" and only returns with a mean of 19.25
+     
